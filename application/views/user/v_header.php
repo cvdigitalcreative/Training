@@ -13,8 +13,7 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="<?= base_url()?>assets/img/favicon.ico" type="image/x-icon" />
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -67,15 +66,15 @@
 		</div>
 
 		<div class="body">
-			<header id="header" class="header-full-width" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+			<header id="header" class="header-full-width transparent-header" data-plugin-options="{'stickyEnabled': false}">
 				<div class="header-body">
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="demo-photography.html">
-											<img alt="Porto" width="184" height="48" src="<?= base_url()?>assets/img/demos/photography/logo-photography.png">
+										<a href="demo-photography-2.html">
+											<img alt="Porto" width="150" height="39" src="<?= base_url()?>assets/img/demos/photography/logo-photography-2.png">
 										</a>
 									</div>
 								</div>
