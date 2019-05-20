@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title><?= $title?></title>	
+		<title>Demo Photography | Porto - Responsive HTML5 Template 7.0.0</title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -66,14 +66,14 @@
 		</div>
 
 		<div class="body">
-			<header id="header" class="header-full-width transparent-header" data-plugin-options="{'stickyEnabled': false}">
+			<header id="header" class="header-full-width" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
 				<div class="header-body">
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="demo-photography-2.html">
+										<a href="demo-photography.html">
 											<img alt="Porto" width="150" height="39" src="<?= base_url()?>assets/img/demos/photography/logo-photography-2.png">
 										</a>
 									</div>
@@ -139,3 +139,4 @@
 					</div>
 				</div>
 			</header>
+
