@@ -25,7 +25,7 @@ class Login extends CI_Controller{
                 $user_nama=$xcadmin['pengguna_nama'];
                 $email = $xcadmin['pengguna_email'];
                 $this->session->set_userdata('email',$email);
-                $this->session->set_userdata('id',$id);
+                $this->session->set_userdata('idadmin',$id);
                 $this->session->set_userdata('nama',$user_nama);
                 redirect('Admin/Tulisan');
             }

@@ -24,9 +24,9 @@ wrapper -->
                 <div class="card-body">
                   <form  action="<?php echo base_url().'Admin/Tulisan/simpan_tulisan'?>" method="post" class="form-horizontal" enctype="multipart/form-data">
                       <div class="form-group">
-                          <label class="control-label" for="fname">First name</label>
+                          <label class="control-label" for="fname">Judul</label>
                           <div class="mb-4">
-                            <input type="text" class="form-control" id="fname" name="xjudul" placeholder="First name" required />
+                            <input type="text" class="form-control" id="fname" name="xjudul" placeholder="Judul" required />
                           </div>
                           <label class="control-label" for="fname">News Content</label>
                             <textarea id="summernote" name="xisi" required><p>Hello Summernote</p></textarea>

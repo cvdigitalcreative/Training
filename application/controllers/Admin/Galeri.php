@@ -3,7 +3,7 @@ class Galeri extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		if($this->session->userdata('masuk') !=TRUE){
-            $url=base_url('Administrator');
+            $url=base_url('Login');
             redirect($url);
         };
 		$this->load->model('m_album');
@@ -27,7 +27,7 @@ class Galeri extends CI_Controller{
 			
 
 				$judul=strip_tags($this->input->post('xjudul'));
-	            $deskripsi=$this->input->post('xdeskripsi');
+	            $deskripsi="";
 				$album=strip_tags($this->input->post('xalbum'));
 				$kode=$this->session->userdata('idadmin');
 				$user=$this->m_pengguna->get_pengguna_login($kode);
@@ -98,7 +98,7 @@ class Galeri extends CI_Controller{
 	                        $gambar=$gbr['file_name'];
 	                        $galeri_id=$this->input->post('kode');
 	                        $judul=strip_tags($this->input->post('xjudul'));
-	                        $deskripsi=$this->input->post('xdeskripsi');
+	                        $deskripsi="";
 							$album=strip_tags($this->input->post('xalbum'));
 							$images=$this->input->post('gambar');
 							$path='./assets/images/'.$images;
@@ -120,7 +120,7 @@ class Galeri extends CI_Controller{
 	            }else{
 							$galeri_id=$this->input->post('kode');
 	                        $judul=strip_tags($this->input->post('xjudul'));
-	                        $deskripsi=$this->input->post('xdeskripsi');
+	                        $deskripsi="";
 							$album=strip_tags($this->input->post('xalbum'));
 							$kode=$this->session->userdata('idadmin');
 							$user=$this->m_pengguna->get_pengguna_login($kode);

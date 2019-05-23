@@ -6,14 +6,14 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Demo Photography | Porto - Responsive HTML5 Template 7.0.0</title>	
+		<title><?= $title?></title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?= base_url()?>assets/img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="<?= base_url()?>assets/img/logo-stick-change-2.png" type="image/x-icon" />
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -48,6 +48,8 @@
 
 		<!-- Skin CSS -->
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/skins/skin-photography.css"> 
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="<?= base_url()?>assets/css/skins/default.css"> 
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/custom.css">
@@ -57,13 +59,7 @@
 
 	</head>
 	<body class="loading-overlay-showing" data-loading-overlay>
-		<div class="loading-overlay">
-			<div class="bounce-loader">
-				<div class="bounce1"></div>
-				<div class="bounce2"></div>
-				<div class="bounce3"></div>
-			</div>
-		</div>
+		
 
 		<div class="body">
 			<header id="header" class="header-full-width" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
@@ -73,8 +69,8 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="demo-photography.html">
-											<img alt="Porto" width="150" height="39" src="<?= base_url()?>assets/img/demos/photography/logo-photography-2.png">
+										<a href="<?= base_url()?>">
+											<img alt="Porto" width="150" height="39" src="<?= base_url()?>assets/img/Logo1.png">
 										</a>
 									</div>
 								</div>

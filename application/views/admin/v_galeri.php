@@ -28,10 +28,9 @@
                     <tr>
                       <th style="width: 90px;">Gambar</th>
                       <th>Judul</th>
-                      <th>Deskripsi</th>
+                      <!-- <th>Deskripsi</th> -->
                       <th style="width: 80px;">Tanggal</th>
                       <th style="width: 80px;">Album</th>
-                      <th style="width: 80px;">Author</th>
                       <th style="width: 80px;">Aksi</th>                        
                     </tr>
                 </thead>
@@ -52,10 +51,9 @@
                       <tr>
                         <td><img src="<?php echo base_url().'assets/images/'.$galeri_gambar;?>" style="width:90px;"></td>
                         <td><?php echo $galeri_judul;?></td>
-                        <td><?php echo $galeri_deskripsi;?></td>
+                        <!-- <td><?php echo $galeri_deskripsi;?></td> -->
                         <td><?php echo $galeri_tanggal;?></td>
-                        <td><?php echo $galeri_album_nama;?></td>
-                        <td><?php echo $galeri_author;?></td>                                                     
+                        <td><?php echo $galeri_album_nama;?></td>                                                  
                         <td>
                           <a href="" style="margin-right: 20px" data-toggle="modal" data-target="#ModalEdit<?php echo $galeri_id;?>"><span class="ti-pencil"></span></a>
                           <a href="" data-toggle="modal" data-target="#ModalHapus<?php echo $galeri_id;?>"><span class="ti-trash"></span></a>
@@ -83,12 +81,12 @@
                                     <label class="control-label">Judul</label>
                                     <input class="form-control form-white" placeholder="Enter title" type="text" name="xjudul" required/>
                                 </div>
-                                <div class="col-md-12">
+                                <!-- <div class="col-md-12">
                                     <label class="control-label">Deskripsi</label>
                                     <input class="form-control form-white" placeholder="Enter deskripsi" type="text" name="xdeskripsi" />
-                                </div>
+                                </div> -->
                                 <div class="col-md-12 col mb-20">
-                                  <label for="inlineFormCustomSelect">Album</label>
+                                  <label for="inlineFormCustomSelect">Kategori</label>
                                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="xalbum" required>
                                         <option selected value="">Choose...</option>
                                          <?php
@@ -145,12 +143,12 @@
                                     <label class="control-label">Judul</label>
                                     <input class="form-control form-white" placeholder="Enter title" type="text" name="xjudul" value="<?php echo $galeri_judul;?>" required/>
                                 </div>
-                                <div class="col-md-12">
+                                <!-- <div class="col-md-12">
                                     <label class="control-label">Deskripsi</label>
                                     <input class="form-control form-white" placeholder="Enter deskripsi" type="text" name="xdeskripsi" value="<?php echo $galeri_deskripsi;?>" />
-                                </div>
+                                </div> -->
                                 <div class="col-md-12 col mb-20">
-                                  <label for="inlineFormCustomSelect">Album</label>
+                                  <label for="inlineFormCustomSelect">Kategori</label>
                                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="xalbum" required>
                                         <option selected value="">Choose...</option>
                                          <?php

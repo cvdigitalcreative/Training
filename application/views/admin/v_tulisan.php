@@ -30,8 +30,7 @@ wrapper -->
                   <tr>
                       <th style=" width: 90px;">Gambar</th>
                       <th>Judul</th>
-                      <th style=" width: 65px;">Tanggal</th>
-                      <th style=" width: 75px;">Author</th>                     
+                      <th style=" width: 65px;">Tanggal</th>                  
                       <th style=" width: 90px;">Kategori</th>  
                       <th style=" width: 65px;">Aksi</th>
                   </tr>
@@ -57,7 +56,6 @@ wrapper -->
                     <td><img src="<?php echo base_url().'assets/images/'.$tulisan_gambar;?>" style="width:90px;"></td>
                     <td><?php echo $tulisan_judul;?></td>                 
                     <td><?php echo $tulisan_tanggal;?></td>
-                    <td><?php echo $tulisan_author;?></td>
                     <td><?php echo $kategori_nama;?></td>
                     <td>
                          <a href="<?php echo base_url().'Admin/Tulisan/get_edit/'.$tulisan_id;?>" style="margin-right: 20px" ><span class="ti-pencil"></span></a>
