@@ -87,7 +87,7 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="demo-photography.html">
+														<a class="nav-link" href="<?= base_url()?>About">
 															About Us
 														</a>
 													</li>
@@ -97,12 +97,17 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="demo-photography.html">
+														<a class="nav-link" href="<?= base_url()?>About">
+															Riska Uji
+														</a>
+													</li>
+													<li class="dropdown-full-color dropdown-primary">
+														<a class="nav-link" href="<?= base_url()?>Jadwal">
 															Jadwal
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="demo-photography.html">
+														<a class="nav-link" href="<?= base_url()?>Galeri">
 															Galeri
 														</a>
 													</li>
@@ -112,7 +117,7 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="demo-photography.html">
+														<a class="nav-link" href="<?= base_url()?>Kontak">
 															Kontak Kami
 														</a>
 													</li>
@@ -121,9 +126,9 @@
 											</nav>
 										</div>
 										<ul class="header-social-icons social-icons d-none d-sm-block">
-											<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-											<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+											<li class="social-icons-facebook"><a href="https://www.facebook.com/dwianekateknik.dwianekateknik" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="social-icons-twitter"><a href="https://twitter.com/trainingk3dwi?s=09" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+										<li class="social-icons-instagram"><a href="https://instagram.com/trainingk3dwi?igshid=sdk575yqn4xj" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
 										</ul>
 										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
 											<i class="fas fa-bars"></i>

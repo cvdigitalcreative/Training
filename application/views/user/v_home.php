@@ -130,7 +130,6 @@
 					<div class="thumb-gallery">
 						<div class="owl-carousel owl-theme manual thumb-gallery-detail" id="thumbGalleryDetail">
 							<?php 
-
 						  			foreach($galeri->result_array() as $row) :
 			                    		$id = $row['galeri_id'];
 			                    		$judul = $row['galeri_judul'];
@@ -147,12 +146,11 @@
 				</div>
 				<div id="horizontalScrollBox">
 					<div class="content">
-						<?php 
-
-						  		foreach($galeri->result_array() as $row) :
-			                    	$id = $row['galeri_id'];
-			                    	$gambar = $row['galeri_gambar'];
-	                  		?>
+						<?php
+						  	foreach($galeri->result_array() as $row) :
+			                   	$id = $row['galeri_id'];
+			                   	$gambar = $row['galeri_gambar'];
+	                  	?>
 						<div class="horizontal-scroll-item-wrapper">
 							
 							<div class="horizontal-scroll-item">
@@ -165,29 +163,13 @@
 									</span>
 								</a>
 							</div>
-							
 						</div>
 						<?php endforeach;?>
 					</div>
 					
 				</div>
 
-			<footer id="footer" class="mt-0">
-				<div class="footer-copyright">
-					<div class="container py-2">
-						<div class="row py-4">
-							<div class="col text-center">
-								<ul class="footer-social-icons social-icons social-icons-clean social-icons-icon-light mb-3">
-									<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-									<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-									<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-								</ul>
-								<p><a target="blank" href="digitalcreative.web.id"><strong>Digital Creative</strong></a> - © Copyright 2018. All Rights Reserved.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+			
 
 			</div>
 
