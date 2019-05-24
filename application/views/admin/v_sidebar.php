@@ -35,6 +35,17 @@
             <li> <a href="<?php echo base_url()?>Admin/Galeri">List Galeri | Tentang</a> </li>
           </ul>
         </li>
+
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#Pendaftaran">
+            <div class="pull-left"><i class="ti-calendar"></i><span class="right-nav-text">Pendaftaran</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="Pendaftaran" class="collapse" data-parent="#sidebarnav">
+             <li> <a href="<?php echo base_url()?>Admin/Training">Training</a> </li>
+            <li> <a href="<?php echo base_url()?>Admin/Pendaftaran">Data Pendaftaran</a> </li>
+          </ul>
+        </li>
          <!-- menu item mailbox-->
         <li>
           <a href="<?php echo base_url()?>Admin/Inbox"><i class="ti-email"></i><span class="right-nav-text">Mail box</span> </a>

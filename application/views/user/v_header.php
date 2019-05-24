@@ -87,7 +87,7 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="<?= base_url()?>About">
+														<a class="nav-link" href="">
 															About Us
 														</a>
 													</li>
@@ -97,7 +97,7 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="<?= base_url()?>About">
+														<a class="nav-link" href="">
 															Riska Uji
 														</a>
 													</li>
@@ -112,7 +112,7 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="demo-photography.html">
+														<a class="nav-link" href="<?= base_url()?>Pendaftaran">
 															Pendaftaran
 														</a>
 													</li>
