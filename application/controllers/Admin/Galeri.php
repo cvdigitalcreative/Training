@@ -24,7 +24,6 @@ class Galeri extends CI_Controller{
 	}
 	
 	function simpan_galeri(){
-			
 
 				$judul=strip_tags($this->input->post('xjudul'));
 	            $deskripsi="";
@@ -37,7 +36,7 @@ class Galeri extends CI_Controller{
 
 				$config['upload_path'] = './assets/images/'; //path folder
 	            $config['allowed_types'] = 'gif|jpg|png|jpeg|bmp';
-	            $config['max_size']             = 0; //type yang dapat diakses bisa anda sesuaikan
+	            $config['max_size'] = 0; //type yang dapat diakses bisa anda sesuaikan
 	            // 	 //nama yang terupload nantinya
 
 
@@ -57,6 +56,7 @@ class Galeri extends CI_Controller{
 		                    // Uploaded file data
 		                    $fileData = $this->upload->data();
 		                    $gambar = $fileData['file_name'];
+		                    echo $gambar;
 		                    $this->m_galeri->simpan_galeri($judul,$deskripsi,$album,$user_id,$user_nama,$gambar);
 
 	               		}
@@ -66,6 +66,7 @@ class Galeri extends CI_Controller{
 		            redirect('Admin/Galeri');
 	   
 	            }else{
+	            	echo $this->session->set_flashdata('msg','error');
 					redirect('Admin/Galeri');
 				}          
 	}

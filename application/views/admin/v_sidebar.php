@@ -42,8 +42,8 @@
             <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
           </a>
           <ul id="Pendaftaran" class="collapse" data-parent="#sidebarnav">
-             <li> <a href="<?php echo base_url()?>Admin/Training">Training</a> </li>
-            <li> <a href="<?php echo base_url()?>Admin/Pendaftaran">Data Pendaftaran</a> </li>
+             <li> <a href="<?php echo base_url()?>Admin/Training/">Training</a> </li>
+            <li> <a href="<?php echo base_url()?>Pendaftaran/Data">Data Pendaftaran</a> </li>
           </ul>
         </li>
          <!-- menu item mailbox-->

@@ -16,7 +16,7 @@
 							<div class="col-lg-8 pb-3">
 								<h2 class="font-weight-normal custom-font-size-1 mb-4">Form Pendaftaran</h2>
 
-								<form   action="php/contact-form.php" method="POST">
+								<form action="<?= base_url()?>Pendaftaran/save" method="POST">
 									
 									<div class="form-row">
 										<div class="form-group text-left col">
@@ -38,9 +38,22 @@
 									</div>
 									<div class="form-row">
 										<div class="form-group text-left col">
+											<label class="control-label"><b>Perusahaan / Instansi</b></label>
+											<input type="email" placeholder="Your Company" value="" maxlength="100" class="form-control" name="perusahaan" id="perusahaan" required>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group text-left col">
 											<label class="control-label"><b>Training</b></label>
 											<select class="form-control " name="training">
-												<option>Puji</option>
+											<?php foreach($training->result_array() as $i) :
+							                   $no++;
+							                   $training_id = $i['training_id'];
+							                   $training_nama = $i['training_nama'];
+							                ?>
+												<option value="<?= $training_id?>"><?= $training_nama?></option>
+											<?php endforeach;?>
+
 											</select>
 										</div>
 									</div>
@@ -64,5 +77,4 @@
 					
 
 			</div>
-
-					
+	

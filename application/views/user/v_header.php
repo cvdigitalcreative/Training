@@ -87,17 +87,17 @@
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="">
+														<a class="nav-link" href="<?= base_url()?>About">
 															About Us
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="demo-photography.html">
+														<a class="nav-link" href="<?= base_url()?>Training">
 															Training
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-primary">
-														<a class="nav-link" href="">
+														<a class="nav-link" href="<?= base_url()?>Riska_uji">
 															Riska Uji
 														</a>
 													</li>

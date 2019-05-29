@@ -69,7 +69,10 @@ class Tulisan extends CI_Controller{
 							$filter2=str_replace("$", "", $filter);
 							$filter3=str_replace("(", "", $filter2);
 							$filter4=str_replace(")", "", $filter3);
-							$slug=strtolower(str_replace(" ", "-", $filter4));
+							$filter5=str_replace("/", "", $filter4);
+							$filter6=str_replace("&", "", $filter5);
+							$filter7=str_replace("*", "", $filter6);
+							$slug=strtolower(str_replace(" ", "-", $filter7));
 							$isi=$this->input->post('xisi');
 							$kategori_id=strip_tags($this->input->post('xkategori'));
 							$data=$this->m_kategori->get_kategori_byid($kategori_id);

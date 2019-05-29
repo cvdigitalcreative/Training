@@ -11,7 +11,6 @@
 			return $hsl;
 		}
 
-
 		function simpan_tentang($nama,$kategori){
 			$hsl=$this->db->query("INSERT into tbl_tentang(tentang_nama,tentang_jabatan,tentang_bijak,tentang_gambar,link_option_1,link_option_2,tentang_kategori_id) values ('$nama','$jabatan','$bijak','$gambar','$option1','$option2','$kategori')");
 			return $hsl;
@@ -21,7 +20,6 @@
 			$hsl=$this->db->query("UPDATE tbl_tentang set tentang_nama='$nama',tentang_jabatan='$jabatan',tentang_bijak='$bijak',tentang_gambar='$gambar',link_option_1='$option1',link_option_2='$option2',tentang_kategori_id='$kategori' where tentang_id='$tentang_id'");
 			return $hsl;
 		}
-s
 
 		function hapus_tentang($kode){
 			$hsl=$this->db->query("DELETE from tbl_tentang where tentang_id='$kode'");

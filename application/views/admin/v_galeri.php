@@ -285,7 +285,7 @@
 <script src="<?php echo base_url()?>assets/admin/js/sweetalert2.js"></script>
 
 <!-- toastr -->
-<!-- <script src="<?php echo base_url()?>assets/admin/js/toastr.js"></script> -->
+<script src="<?php echo base_url().'assets/admin/js/jquery.toast.min.js'?>"></script>
 
 <!-- validation -->
 <script src="<?php echo base_url()?>assets/admin/js/validation.js"></script>
@@ -298,6 +298,57 @@
  
 </body>
 </html>
+<?php if($this->session->flashdata('msg')=='error'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Error',
+                    text: "Password dan Ulangi Password yang Anda masukan tidak sama.",
+                    showHideTransition: 'slide',
+                    icon: 'error',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#FF4859'
+                });
+        </script>
+    
+    <?php elseif($this->session->flashdata('msg')=='success'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "Galeri Berhasil disimpan ke database.",
+                    showHideTransition: 'slide',
+                    icon: 'success',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+    <?php elseif($this->session->flashdata('msg')=='info'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Info',
+                    text: "Galeri berhasil di update",
+                    showHideTransition: 'slide',
+                    icon: 'info',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#00C9E6'
+                });
+        </script>
+    <?php elseif($this->session->flashdata('msg')=='success-hapus'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "Galeri Berhasil dihapus.",
+                    showHideTransition: 'slide',
+                    icon: 'success',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+    <?php else:?>
 
+    <?php endif;?>
 
 

@@ -53,6 +53,15 @@
 	                  				?>
 									<section class="toggle active mt-0">
 										<label><?= $judul?></label>
+										<style type="text/css">
+											li {
+												color : black !important;
+
+											}
+											p{
+												margin-bottom: 10px !important;
+											}
+										</style>
 										<div class="toggle-content">
 											<?= $isi?>
 										</div>

@@ -29,7 +29,7 @@ class Kontak extends CI_Controller {
         $email=str_replace("'", "", $this->input->post('email',TRUE));      
         $pesan=str_replace("'", "", $this->input->post('message',TRUE));
         $this->m_kontak->kirim_pesan($nama,$email,$pesan);
-        echo $this->session->set_flashdata('msg',' <p>NB: </strong> Terima Kasih Telah Menghubungi Kami.</p>');
+        echo $this->session->set_flashdata('msg','<p>NB: </strong> Terima Kasih Telah Menghubungi Kami.</p>');
         redirect('Kontak');
     }
 

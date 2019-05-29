@@ -65,7 +65,24 @@
 			ga('send', 'pageview');
 		</script>
 		 -->
-
+		 <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/admin/css/jquery.toast.min.css">
+<script src="<?php echo base_url().'assets/admin/js/jquery.toast.min.js'?>"></script>
+<?php if($this->session->flashdata('msg')=='success'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "Pendaftaran Berhasil",
+                    showHideTransition: 'slide',
+                    icon: 'info',
+                    loader: true,        // Change it to false to disable loader
+                    loaderBg: '#ffffff',
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+<?php else:?>
+<?php endif;?>
+				
 
 	</body>
 </html>

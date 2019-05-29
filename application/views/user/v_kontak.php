@@ -1,6 +1,6 @@
 		<div role="main" class="main">
 
-				<section class="page-header page-header-modern page-header-background page-header-background-sm" style="background-image: url(<?= base_url()?>assets/img/photography/custom-header-bg.jpg);">
+				<section class="page-header page-header-modern page-header-background page-header-background-sm" style="background-image: url(<?= base_url()?>assets/img/demos/photography/custom-header-bg.jpg);">
 					<div class="container">
 						<div class="row py-3">
 							<div class="col-md-12 align-self-center p-static order-2 text-center">

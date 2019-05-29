@@ -26,10 +26,7 @@ class M_tulisan extends CI_Model{
 		return $hsl;
 	}
 
-
-
 	//Front-End
-
 	function get_post_home(){
 		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d %M %Y') AS tanggal FROM tbl_tulisan ORDER BY tulisan_id DESC limit 4");
 		return $hsl;
@@ -60,8 +57,6 @@ class M_tulisan extends CI_Model{
 		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d %M %Y') AS tanggal FROM tbl_tulisan WHERE tulisan_kategori_nama = 'agenda' ORDER BY tulisan_id DESC limit 3");
 		return $hsl;
 	}
-
-
 
 	function get_berita_slider(){
 		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d/%m/%Y') AS tanggal FROM tbl_tulisan where tulisan_img_slider='1' ORDER BY tulisan_id DESC");

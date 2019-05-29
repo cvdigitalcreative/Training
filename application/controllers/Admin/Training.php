@@ -14,42 +14,42 @@
 		      redirect($url);
 		    };
 
-		    
+		    $this->load->model('m_training');
 	  	}
 
 	  	function index(){
-	  		if($this->session->userdata('akses') == 2 && $this->session->userdata('masuk') == true){
-		       $y['title'] = "Kurir";
-		       $x['kurir'] = $this->m_pemesanan->getAllkurir();
-		       $this->load->view('v_header',$y);
+	  		if($this->session->userdata('akses') == 1 && $this->session->userdata('masuk') == true){
+		       $y['title'] = "Training";
+		       $x['training'] = $this->m_training->getAllTraining();
+		       $this->load->view('admin/v_header',$y);
 		       $this->load->view('admin/v_sidebar');
-		       $this->load->view('admin/v_kurir',$x);
+		       $this->load->view('admin/v_training',$x);
 		    }
 		    else{
 		       redirect('Login');
 		    }
 	  	}
 
-	  	function savekurir(){
-	  		$kurir_nama = $this->input->post('kurir_nama');
-	  		$this->m_pemesanan->save_kurir($kurir_nama);
+	  	function savetraining(){
+	  		$nama = $this->input->post('nama');
+	  		$this->m_training->save_Training($nama);
 	  		echo $this->session->set_flashdata('msg','success');
-	       	redirect('Admin/Pemesanan/kurir');
+	       	redirect('Admin/Training');
 	  	}
 
-	  	function updatekurir(){
-	  		$id = $this->input->post('kurir_id');
-	  		$kurir_nama = $this->input->post('kurir_nama');
-	  		$this->m_pemesanan->update_kurir($id,$kurir_nama);
+	  	function updatetraining(){
+	  		$id = $this->input->post('id');
+	  		$nama = $this->input->post('nama');
+	  		$this->m_training->update_Training($id,$nama);
 	  		echo $this->session->set_flashdata('msg','update');
-	       	redirect('Admin/Pemesanan/kurir');
+	       	redirect('Admin/Training');
 	  	}
 
-	  	function hapuskurir(){
-	  		$id = $this->input->post('kurir_id');
-	  		$this->m_pemesanan->hapus_kurir($id);
+	  	function hapustraining(){
+	  		$id = $this->input->post('id');
+	  		$this->m_training->hapus_Training($id);
 	  		echo $this->session->set_flashdata('msg','delete');
-	       	redirect('Admin/Pemesanan/kurir');
+	       	redirect('Admin/Training');
 	  	}
  }
 
